@@ -1,0 +1,240 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	min-width: 1080px;
+}
+
+footer a {
+	float: right;
+}
+
+a {
+	cursor: pointer;
+}
+
+iframe {
+	float: right;
+    width: 400px;
+   	height: 700px;
+}
+
+img.logo {
+	max-height: 100px;
+	max-width: 280px;
+}
+
+ul.navbar-nav {
+	float: right;
+}
+
+ul.navbar-nav li {
+	margin-top: 25px;
+	font-size: 1.2em;
+}
+
+ul.navbar-nav li.social {
+	margin-top: 15px;
+	font-size: 3em;
+}
+
+ul.navbar-nav li.social i.fa-twitter-square {
+	color: #55acee;
+}
+
+ul.navbar-nav li.social i.fa-facebook-square {
+	color: #3b5998;
+}
+
+nav.navbar-white {
+	background-color: white;
+	border-bottom: 1px solid black;	
+}
+
+#facebook {
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+
+.carousel-inner > div.item > img {
+	position: absolute;
+    top: 0;
+    left: 0;
+    height: initial;
+}
+
+.azul {
+	color: #3c4f81;
+}
+
+.bk-azul {
+	color: #FFF;
+	background-color: #3c4f81;
+}
+
+form input{
+	background-color: #CCC;
+    border: 1px solid #CCC;
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 25px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+
+form textarea {
+    background-color: #CCC;
+    border: 1px solid #999;
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #000000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    height: 140px;
+    font-size: 12px;
+}
+
+form input[type="checkbox"] {
+    width: 100px;
+}
+
+form button.enviar {
+    background-color: #3c4f81;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #FFF;
+    border: 1px solid #001780;
+    width: 70px;
+    margin-left: 320px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.home .row.icon-buttons div a {
+    font-size: 1em;
+    margin-right: 10px;
+    padding: 10px;
+    color: white;
+    background-color: #3c4f81;
+}
+
+div.separador {
+	margin-top: 160px;
+}
+
+.formenviado {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    color: #3c4f81;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div#main-side-bar {
+	font-size: 12px;
+}
+
+div#main-side-bar .list-group-submenu {
+	margin-left: 20px;
+}
+
+div#main-side-bar .list-group-item-success {
+	color: white;
+	background-color: #001780;
+}
+
+div#main-side-bar a.list-group-item {
+	font-weight: bold;
+	
+}
+
+div#main-side-bar a.list-group-item img {
+	max-width: 100px;
+	max-height: 100px;
+	padding-right: 20px;
+}
+
+div.catalogo p{
+	margin: 0px;
+}
+
+div.casa img.fotogrande {
+	width: 100%;
+	height: 100%;
+}
+
+div.casa div.galeria {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+div.casa div.galeria a img{
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+div.casa div.planos a img{
+	max-height: 700px;
+	max-width: 600px;
+}
+
+div.prototipo p {
+    background-color: #EAEAEA;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+div.prototipo p span {
+	float: right;
+}
+
+div.descripcion p {
+	font-family: cursive;
+}
+
+div.etapas p {
+    background-color: #EAEAEA;
+    font-size: 15px;
+}
+
+div.precios table {	
+    background-color: #EAEAEA;
+    font-size: 14px;
+}
+
+div.precios table tr th {
+	border: 2px solid white;
+}
+
+div.precios table tr td {
+	border: 2px solid white;
+}
+
+div.precios table tr td span {
+	float: right;
+	margin-right: 20px;	
+}
+
+div.total h4 {
+	float: right;
+}
+
+div.total h4 a{
+	margin-left: 10px;
+	padding: 5px;
+	background-color: #3c4f81;
+	color: white;
+}
+
+div.planos {
+	margin-bottom: 10px;
+}
+
+div.map {
+	height: 400px;
+}
