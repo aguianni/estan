@@ -58,6 +58,10 @@ nav.navbar-white {
 	margin-right: 20px;
 }
 
+div.header-photo img{
+	max-height: 400px;
+}
+
 .carousel-inner > div.item > img {
 	position: absolute;
     top: 0;
@@ -170,6 +174,14 @@ div.casa img.fotogrande {
 div.casa div.galeria {
 	margin-top: 10px;
 	margin-bottom: 20px;
+}
+
+div.casa div.galeria div.scroll {
+	overflow-x:auto;	
+}
+
+div.casa {
+	margin-top: 20px;
 }
 
 div.casa div.galeria a img{

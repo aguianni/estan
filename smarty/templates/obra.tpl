@@ -95,30 +95,15 @@
   	<body>
   		{include file="nav_bar.tpl"}
     	
-    	
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-		  	<ol class="carousel-indicators">
-		    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    	<li data-target="#myCarousel" data-slide-to="1"></li>
-		    	<li data-target="#myCarousel" data-slide-to="2"></li>
-		  	</ol>
-		  	<div class="carousel-inner" role="listbox">
-		  		{foreach from=$sliders item=slider name=slider}
-		    		<div class="item {if $smarty.foreach.slider.first}active{/if}">
+    	<div class="row">
+			{foreach from=$sliders item=slider name=slider}
+				{if $smarty.foreach.slider.first}
+		    		<div class="header-photo" class="col-md-12">
 			    		<img src="{$slider}" alt="Arquitectos Posadas Misiones">
 			    	</div>
-		    	{/foreach}
-		  	</div>
-		  	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    	<span class="sr-only">Previous</span>
-		  	</a>
-		  	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    	<span class="sr-only">Next</span>
-		 	 </a>
-		</div><!-- carousel-->
+		    	{/if}
+	    	{/foreach}
+    	</div>
 
 		<div class="row casa">
 			<div class="col-md-2 col-md-offset-1">
@@ -127,15 +112,21 @@
         	</div>
         	<div class="col-md-7">
         		<div class="row">
-        			<h3 class="azul">{$casa->nombre}</h3>
-					<img src="{$imagenes_dir}{$imagenes[0]}" class="fotogrande">
+        			<div class="col-md-12">
+        				<h3 class="azul">{$casa->nombre}</h3>
+        			</div>
         		</div>
-        		<div class="row galeria">        			
-			    	{foreach from=$imagenes item=imagen name=imagen}
-			    		<a class="fancybox" data-fancybox-group="imagenes" href="{$imagenes_dir}{$imagen}" title="{$casa->nombre}">
-							<img src="{$imagenes_dir}thumb/{$imagen}" alt="" />
-						</a>
-			    	{/foreach}				   
+        		<div class="row galeria">
+	        		{assign var="siz" value={$imagenes|@sizeof}}
+        			<div class="col-md-12 scroll">
+				    	<div style="width:{$siz * 230}px">
+					    	{foreach from=$imagenes item=imagen name=imagen}
+					    		<a class="fancybox" data-fancybox-group="imagenes" href="{$imagenes_dir}{$imagen}" title="{$casa->nombre}">
+									<img src="{$imagenes_dir}thumb/{$imagen}" alt="" />
+								</a>
+					    	{/foreach}
+				    	</div>
+				    </div>
         		</div>
         		<div class="row descripcion">
         			<p class="lead">{$casa->descripcion}</p>

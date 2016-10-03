@@ -17,7 +17,13 @@
 		
 		<script src="js/jquery-2.1.4.js"></script>
 		<script src="bootstrap/js/bootstrap.js"></script>
-	
+		<script>
+		{literal}
+			function changeImg(obj, src){
+				obj.src = src;			
+			}
+		{/literal}
+		</script>
 	</head>
   	<body>
   		{include file="nav_bar.tpl"}

@@ -64,29 +64,15 @@
   	<body>
   		{include file="nav_bar.tpl"}
     	
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-		  	<ol class="carousel-indicators">
-		    	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		    	<li data-target="#myCarousel" data-slide-to="1"></li>
-		    	<li data-target="#myCarousel" data-slide-to="2"></li>
-		  	</ol>
-		  	<div class="carousel-inner" role="listbox">
-		  		{foreach from=$sliders item=slider name=slider}
-		    		<div class="item {if $smarty.foreach.slider.first}active{/if}">
+    	<div class="row">
+			{foreach from=$sliders item=slider name=slider}
+				{if $smarty.foreach.slider.first}
+		    		<div class="header-photo" class="col-md-12">
 			    		<img src="{$slider}" alt="Arquitectos Posadas Misiones">
 			    	</div>
-		    	{/foreach}
-		  	</div>
-		  	<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    	<span class="sr-only">Previous</span>
-		  	</a>
-		  	<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    	<span class="sr-only">Next</span>
-		 	 </a>
-		</div>
+		    	{/if}
+	    	{/foreach}
+    	</div>
 
 		<div class="row casa">
 			<div class="col-md-2 col-md-offset-1">
